@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gerenciador de Tarefas</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="tabela.css">
+        <link rel="stylesheet" href="criacao.css">
+    </head>
+    <body>
+        <header>
+            <h1>Gerenciador de Tarefas - FATEC SO</h1>
+        </header>
+
+        <div class="container">
+            <nav class="sidenav">
+                <ul>
+                    <li><a href="#" id="btn-minhas-tarefas"><i class="fas fa-list-ul"></i>Minhas Tarefas</a></li>
+                    <li><a href="#" id="btn-cadastrar-tarefas"><i class="far fa-plus-square"></i>Cadastrar</a></li>
+                </ul>
+            </nav>
+
+            <main class="main-content">
+                <div id="tela-minhas-tarefas" style="display: none;">
+                    <table id="tabela-tarefas">
+                        <tr>
+                            <th>Título</th>
+                            <th>Descrição</th>
+                            <th>Data de vencimento</th>
+                            <th>Prioridade</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="tela-cadastro-tarefas" style="display: none;">
+                    <form id="cadastro-tarefas">
+                        <label for="titulo">Título:</label>
+                        <input type="text" id="titulo" name="titulo">
+                        <label for="descricao">Descrição:</label>
+                        <textarea id="descricao" name="descricao"></textarea>
+                        <label for="data">Data de Vencimento:</label>
+                        <input type="date" id="data" name="data">
+                        <label for="prioridade">Prioridade:</label>
+                        <input type="number" id="prioridade" name="prioridade">
+                        <label for="status">Status:</label>
+                        <select id="status" name="status">
+                            <option value="pendente">Pendente</option>
+                            <option value="encerrada">Encerrada</option>
+                        </select>
+                        <input type="submit" value="Criar Tarefa">
+                    </form>
+                </div>
+
+                <div id="tela-editar-tarefas" style="display: none;">
+                    <form id="editar-tarefas">
+                        <label for="titulo-editar">Título:</label>
+                        <input type="text" id="titulo-editar" name="titulo">
+                        <label for="descricao-editar">Descrição:</label>
+                        <textarea id="descricao-editar" name="descricao"></textarea>
+                        <label for="data-editar">Data de Vencimento:</label>
+                        <input type="date" id="data-editar" name="data">
+                        <label for="prioridade-editar">Prioridade:</label>
+                        <input type="number" id="prioridade-editar" name="prioridade">
+                        <label for="status-editar">Status:</label>
+                        <select id="status-editar" name="status">
+                            <option value="pendente">Pendente</option>
+                            <option value="encerrada">Encerrada</option>
+                        </select>
+                        <input type="submit" value="Editar Tarefa">
+                    </form>
+                </div>       
+                
+                <div id="tela-sem-tarefas" style="display: none;">Nenhuma tarefa cadastrada</div>
+            </main>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>

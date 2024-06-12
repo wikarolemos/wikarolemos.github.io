@@ -1,0 +1,46 @@
+#cadastro-tarefas, #editar-tarefas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#cadastro-tarefas label, #editar-tarefas label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    text-align: left;
+    width: 100%;
+}
+
+#cadastro-tarefas input, #cadastro-tarefas textarea, #cadastro-tarefas select,
+#editar-tarefas input, #editar-tarefas textarea, #editar-tarefas select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#cadastro-tarefas input[type="submit"], #editar-tarefas input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#cadastro-tarefas input[type="submit"]:hover, #editar-tarefas input[type="submit"]:hover {
+    background-color: #45a049;
+}

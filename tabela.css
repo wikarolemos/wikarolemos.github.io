@@ -1,0 +1,93 @@
+/* Estilos para o formulário de filtro de tarefas */
+#filtro-tarefas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#filtro-tarefas input[type="text"],
+#filtro-tarefas select,
+#filtro-tarefas input[type="number"] {
+    flex: 1;
+    margin-right: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#filtro-tarefas input[type="submit"] {
+    padding: 8px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#filtro-tarefas input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para a tabela de tarefas */
+#tabela-tarefas {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#tabela-tarefas th,
+#tabela-tarefas td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#tabela-tarefas th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Ajuste para a coluna de descrição */
+#tabela-tarefas td:nth-child(2) {
+    width: 40%; /* Defina a largura máxima em porcentagem */
+    max-width: 40%; /* Defina a largura máxima em porcentagem */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Ajuste para a coluna de data de vencimento */
+#tabela-tarefas td:nth-child(3) {
+    width: 20%; /* Defina a largura máxima em porcentagem */
+    max-width: 20%; /* Defina a largura máxima em porcentagem */
+}
+
+/* Estilos para os botões de ação */
+.acao-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+    margin-right: 6px
+}
+
+/* Estilos para notificações de prazo */
+.proximo-prazo {
+    color: #FFA500; /* Laranja para prazo próximo */
+}
+
+.prazo-vencido {
+    color: #FF0000; /* Vermelho para prazo vencido */
+}

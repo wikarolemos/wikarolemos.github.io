@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+header {
+    background-color: #c0c0c0;
+    padding: 20px;
+    display: flex; /* Usa Flexbox */
+    justify-content: space-between; /* Distribui espaço entre header e main-content */
+    width: 100%; /* Ocupa toda a largura */
+}
+
+header h1 {
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 0; /* Remove a margem inferior padrão */
+    margin-top: 0; /* Remove a margem inferior padrão */
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* Altura total da tela */
+}
+
+.sidenav {
+    background-color: #eee;
+    width: 200px; /* Largura do sidenav */
+}
+
+.sidenav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.sidenav li {
+    margin-bottom: 0px;
+    padding: 4px;
+}
+
+.sidenav li i {
+    margin-right: 10px; /* Ajuste o valor (em pixels) conforme desejado */
+}
+
+.sidenav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.sidenav a:hover {
+    background-color: #ddd;
+}
+
+.main-content {
+    flex: 1; /* Ocupa o espaço restante (1 fração) */
+    padding: 20px;
+    border-left: 1px solid #ddd;
+}
+
+
+
+
+
+
+
